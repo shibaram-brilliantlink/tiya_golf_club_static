@@ -12,8 +12,8 @@ function App() {
   return (
     <>
       <Header />
-      {/* <HeroSection /> */}
-      {/* <About /> */}
+      <HeroSection />
+      <About />
       {/* <CtaSection /> */}
       {/* <Membership /> */}
       {/* <Events /> */}
