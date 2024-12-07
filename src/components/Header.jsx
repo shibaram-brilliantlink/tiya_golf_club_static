@@ -13,7 +13,7 @@ export default function Header() {
         }`}
       >
         <nav className="container flex justify-between items-center h-[85px] bg-[#3d405b] text-white fixed z-[100]">
-          <div className="left__section flex">
+          <div className="left__section flex cursor-pointer">
             <img
               src="/public/logo.png"
               alt="logo"
@@ -47,13 +47,14 @@ export default function Header() {
             <button type="button" className="btn-gold mr-4">
               Member Login
             </button>
+            {/* using traditional css only */}
             <div
-              className="hamburger flex flex-col justify-center w-8 gap-[6px] h-[30px] md:hidden"
+              className="hamburger flex flex-col justify-center w-8 gap-[6px] h-[30px] md:hidden cursor-pointer"
               onClick={handleMenuClick}
             >
-              <span className="block bg-white h-[2.5px]"></span>
-              <span className="block bg-white h-[2.5px]"></span>
-              <span className="block bg-white h-[2.5px]"></span>
+              <span className={`${isOpen ? "open" : ""}`}></span>
+              <span className={`${isOpen ? "open" : ""}`}></span>
+              <span className={`${isOpen ? "open" : ""}`}></span>
             </div>
           </div>
         </nav>
@@ -63,20 +64,30 @@ export default function Header() {
           }`}
         >
           <ul className="mobile-menu">
-            <li className="py-2 hover:text-[#F2CC8F]">
-              <a href="#">Home</a>
+            <li>
+              <a href="#" className="block py-2 hover:text-[#F2CC8F]">
+                Home
+              </a>
             </li>
-            <li className="py-2 hover:text-[#F2CC8F]">
-              <a href="#">About</a>
+            <li>
+              <a href="#" className="block py-2 hover:text-[#F2CC8F]">
+                About
+              </a>
             </li>
-            <li className="py-2 hover:text-[#F2CC8F]">
-              <a href="#">Membership</a>
+            <li>
+              <a href="#" className="block py-2 hover:text-[#F2CC8F]">
+                Membership
+              </a>
             </li>
-            <li className="py-2 hover:text-[#F2CC8F]">
-              <a href="#">Events</a>
+            <li>
+              <a href="#" className="block py-2 hover:text-[#F2CC8F]">
+                Events
+              </a>
             </li>
-            <li className="py-2 hover:text-[#F2CC8F]">
-              <a href="#">Contact Us</a>
+            <li>
+              <a href="#" className="block py-2 hover:text-[#F2CC8F]">
+                Contact us
+              </a>
             </li>
           </ul>
         </div>

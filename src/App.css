@@ -39,3 +39,27 @@ body {
   color: #fff;
   background: goldenrod;
 }
+
+/* Hameburger menu animation -------------------------- */
+.hamburger {
+  transition: all 0.3s ease;
+}
+.hamburger span {
+  display: block;
+  background-color: white;
+  height: 2.5px;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+.hamburger > span:first-child.open {
+  transform-origin: top left;
+  transform: rotate(45deg) translate(3px, -6px);
+}
+.hamburger > span:nth-child(2).open {
+  opacity: 0;
+  transition: all 10ms ease-out;
+}
+.hamburger > span:last-child.open {
+  transform-origin: bottom left;
+  transform: rotate(-45deg) translate(3px, 6px);
+}
