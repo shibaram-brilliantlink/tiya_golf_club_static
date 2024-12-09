@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="hero">
+    <section className="hero pt-[70px] md:pt-0">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
