@@ -14,7 +14,7 @@ function App() {
       <Header />
       <HeroSection />
       <About />
-      {/* <CtaSection /> */}
+      <CtaSection />
       {/* <Membership /> */}
       {/* <Events /> */}
       {/* <Contact /> */}
